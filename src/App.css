@@ -1,0 +1,29 @@
+/* Add this CSS to your App.css or inline styles */
+.heading-animation {
+  font-size: 1.8rem;
+  color: #4a90e2;
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+  animation: typing 1s steps(50) 0s forwards,
+    blink-caret 0.75s step-end infinite;
+  font-family: "Inter", sans-serif;
+  margin-bottom: 16px;
+}
+
+@keyframes typing {
+  from {
+    width: 5%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* Keyframe for cursor blink effect */
+@keyframes blink-caret {
+  50% {
+    border-color: transparent;
+  }
+}
